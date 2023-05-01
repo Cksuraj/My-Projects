@@ -1,0 +1,254 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins'sans-serif;
+}
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans:wght@300;400&family=Poppins:wght@100&family=Roboto+Condensed:ital,wght@1,300&display=swap");
+
+body {
+  background: rgba(0, 0, 0, 0.7) url(Restourent.png);
+  background-blend-mode: saturation;
+  /* Unite  (vh , vw) can barbad your header flex element */
+  height: 100vh;
+  width: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .fa-solid {
+  display: none;
+}
+
+.logo img {
+  height: 40px;
+  padding: 20px;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+}
+
+.list ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  list-style: none;
+}
+.list ul li a {
+  font-size: 30px;
+  color: goldenrod;
+  font-weight: 500;
+  text-decoration: none;
+}
+.list ul li a:hover {
+  border-bottom: 2px solid goldenrod;
+}
+
+.order {
+  padding-right: 40px;
+}
+button {
+  background-color: rgb(218, 27, 20);
+  color: white;
+  height: 40px;
+  width: 15vh;
+  border: none;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: black;
+  border: 2px solid red;
+}
+footer {
+  border: 2px solid black;
+}
+
+.text {
+  align-items: center;
+  text-align: center;
+}
+.text h1 {
+  color: goldenrod;
+  padding: 35px;
+  font-size: 80px;
+  font-weight: 250;
+}
+
+.btn {
+  text-align: center;
+  font-weight: 700;
+  font-size: 15px;
+  height: 40px;
+  width: 150px;
+}
+.footer {
+  padding-top: 20px;
+  padding-right: 22px;
+  height: 150px;
+}
+.footer img {
+  height: 150px;
+  float: right;
+}
+
+/* Media Query */
+
+/* 300 to 599px */
+@media (min-width: 300px) and (max-width: 599px) {
+  .list {
+    display: block;
+  }
+  header .fa-solid {
+    display: block;
+    font-size: 25px;
+  }
+
+  .order {
+    padding-right: 10px;
+  }
+
+  .list ul {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    background: #262626;
+    transition: right 0.5s;
+  }
+
+  .list ul li {
+    padding: 15px;
+    margin: 5px;
+  }
+  .list ul .fa-solid {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+
+  .text h1 {
+    color: goldenrod;
+    margin-top: 70px;
+    font-size: 50px;
+    font-weight: 250;
+  }
+}
+
+/* 600 to 710*/
+@media (min-width: 600px) and (max-width: 710px) {
+  .list {
+    display: block;
+  }
+  header .fa-solid {
+    display: block;
+    font-size: 25px;
+  }
+
+  .order {
+    padding-right: 10px;
+  }
+
+  .list ul {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    background: #262626;
+    transition: right 0.5s;
+  }
+
+  .list ul li {
+    padding: 15px;
+    margin: 5px;
+  }
+  .list ul .fa-solid {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+
+  .text h1 {
+    color: goldenrod;
+    padding: 85px;
+    font-size: 50px;
+    font-weight: 250;
+  }
+}
+
+/* minimum 712px and maximum 912px */
+@media (min-width: 712px) and (max-width: 912px) {
+  .list {
+    display: block;
+  }
+
+  header .fa-solid {
+    display: block;
+    font-size: 25px;
+  }
+
+  .order {
+    font-size: 3rem;
+    padding-right: 10px;
+  }
+
+  .list ul {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    background: #262626;
+    transition: right 0.5s;
+  }
+
+  .list ul li {
+    padding: 15px;
+    margin: 5px;
+  }
+  .list ul .fa-solid {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+  .text {
+    margin-top: 150px;
+  }
+  button {
+    background-color: rgb(218, 27, 20);
+    color: white;
+    height: 80px;
+    font-size: 2.5rem;
+    width: 15vh;
+    border: none;
+  }
+  .btn {
+    text-align: center;
+    font-weight: 500;
+    font-size: 2.5rem;
+    height: 80px;
+    width: fit-content;
+    padding: 10px 20px;
+  }
+}
